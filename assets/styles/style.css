@@ -1,0 +1,199 @@
+:root {
+  --color--icon:#f26464;
+  --color--text:#373737;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+header .header--nav {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header--nav .header--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header--nav .header--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header--left .logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  font-size: 25px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.header--left .logo--text {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.header--right .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color--icon);
+  color: #fff;
+}
+
+.container {
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}
+.container .introduce {
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+.container .about--me {
+  width: 100%;
+  height: auto;
+}
+.container .button--download {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .skills {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduce .intro--img {
+  margin-right: 100px;
+}
+
+.intro--img img {
+  width: 450px;
+  height: 500px;
+}
+
+.intro--experience .intro--greeting1 {
+  font-weight: 300;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.intro--experience .intro--greeting2 {
+  width: 70%;
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: 400;
+}
+.intro--experience .intro--data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.intro--exp .exp_number {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--color--icon);
+  margin-bottom: 5px;
+}
+.intro--exp .exp_text {
+  letter-spacing: 2px;
+}
+
+.about--me .about--me_title {
+  margin-bottom: 40px;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--color--icon);
+}
+.about--me .about--me_text {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 100px;
+  color: var(--color--text);
+  margin-bottom: 40px;
+}
+
+.button--download_text {
+  width: 250px;
+  height: 50px;
+  border: 1px solid var(--color--icon);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 50px;
+  color: var(--color--icon);
+}
+
+.button--download_text:hover {
+  color: #fff;
+  background-color: var(--color--icon);
+}
+
+.skills .skill--item {
+  width:50%;
+  height: auto;
+}
+
+.skill--item .skills_title {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--color--icon);
+  margin-bottom: 40px;
+}
+.skill--item .list--skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list--skills .btn-skill {
+  display: inline-block;
+  color: #373737;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 27px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
