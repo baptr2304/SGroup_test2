@@ -3,15 +3,32 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    //   z-index: 5;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
+  }
+  .container {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    box-sizing: border-box;
+  }
+  footer {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    padding: 120px 0;
+    box-sizing: border-box;
+  }
 }
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  //   z-index: 5;
-  background-color: #fff;
-  padding: 20px 0;
-  box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
   .header--nav {
     width: 80%;
     height: auto;
@@ -25,11 +42,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 12px;
   }
   .header--right {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 12px;
   }
 }
 .header--left {
@@ -67,11 +86,6 @@ header {
 //container
 
 .container {
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
   //intro
   .introduce {
     padding-bottom: 30px;
@@ -84,6 +98,7 @@ header {
   .about--me {
     width: 100%;
     height: auto;
+    padding: 0 12px;
   }
   //button download
   .button--download {
@@ -92,6 +107,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   //skills
   .skills {
@@ -99,12 +115,29 @@ header {
     height: auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  //work--experience
+  .work--experience-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .latest--works-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+    padding: 0 12px;
   }
 }
 //intro detail
 .introduce {
   .intro--img {
     margin-right: 100px;
+    padding: 0 12px;
+  }
+  .intro--experience {
+    padding: 0 12px;
   }
 }
 .intro--img {
@@ -153,11 +186,12 @@ header {
     border-bottom: 2px solid var(--color--icon);
   }
   .about--me_text {
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 2px;
-    font-weight: 100px;
     color: var(--color--text);
     margin-bottom: 40px;
+    font-weight: lighter;
+    box-sizing: border-box;
   }
 }
 
@@ -171,6 +205,7 @@ header {
   margin-bottom: 40px;
   border-radius: 50px;
   color: var(--color--icon);
+  transition-duration: 0.4s;
 }
 .button--download_text:hover {
   color: #fff;
@@ -179,8 +214,9 @@ header {
 //skills detail
 .skills {
   .skill--item {
-    width: 40%;
+    width: 50%;
     height: auto;
+    padding: 0 12px;
   }
 }
 .skill--item {
@@ -208,6 +244,196 @@ header {
     border-radius: 27px;
     margin-right: 15px;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 600;
+  }
+}
+//.work--experience detail
+.work--experience-section {
+  .work--experience {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .work--experience_title {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--color--icon);
+    margin-bottom: 40px;
+    margin-left: 12px;
+  }
+}
+.work--experience {
+  .work--experience_part {
+    width: 50%;
+    height: auto;
+    padding: 0 12px;
+  }
+}
+
+.work--experience_part {
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .work--ex_year {
+    font-weight: 600;
+  }
+  .work--ex_nameOffice {
+    font-size: 24px;
+    font-weight: 100;
+  }
+  .work--ex_position {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.work_ex_text {
+  .work_ex_text_item {
+    padding-left: 12px;
+  }
+}
+.work_ex_text_item {
+  li {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
+//latest--works detail
+.latest--works-section {
+  .latest--works-section_title {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--color--icon);
+    margin-bottom: 40px;
+  }
+  .latest--works {
+    width: 100%;
+    height: auto;
+    background-color: var(--color--background);
+    margin-bottom: 30px;
+  }
+}
+.latest--works {
+  .latest--works_list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 40px 70px 0 70px;
+    box-sizing: border-box;
+  }
+}
+.latest--works_list {
+  .work_list {
+    width: 50%;
+    height: auto;
+  }
+}
+.works_list_right {
+  img {
+  max-width: 100%;
+  height: auto;
+  }
+}
+.works_list_left {
+  .works_list_left_text {
+    width: 80%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .works_list_left_button {
+    width: 120px;
+    height: auto;
+    border: solid 2px var(--color--icon);
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+    color: var(--color--icon);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+}
+.works_list_left_button:hover {
+  background-color: var(--color--icon);
+  color: #ffff;
+}
+
+//footer detail
+footer {
+  .footer--container {
+    width: 100%;
+    height: auto;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer--copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+  }
+}
+.footer--container {
+  span {
+    color: var(--color--text_footer);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 48px;
+    margin: 20px 0 10px 0;
+  }
+  p {
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .footer--container_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: auto;
+    border: 2px solid var(--color--icon);
+    text-decoration: none;
+    color: var(--color--icon);
+    padding: 15px 20px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .footer--container_button:hover {
+    color: #ffff;
+    background-color: var(--color--icon);
+  }
+}
+.footer--copyRight {
+  a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  a:hover {
+    color: var(--color--icon);
+    transition-duration: 0.4s;
   }
 }
